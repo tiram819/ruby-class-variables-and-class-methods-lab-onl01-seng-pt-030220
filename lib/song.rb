@@ -19,34 +19,34 @@ class Song
   end
 
   def self.genres
-    @@genres.uniq!
+    @@genres.uniq
   end
 
   def self.artists
-    @@artists.uniq!
+    @@artists.uniq
   end
 
-  def self.genre_count
-    genre_count = {}
+  def self.count
+    count = {}
     @@genres.each do |genre|
-      if genre_count[genre] #if the genre is already in the hash
-        genre_count[genre] += 1
+      if count[genre] 
+        count[genre] += 1
       else #if it's a new genre
-        genre_count[genre] = 1
+        count[genre] = 1
       end
     end
-    genre_count
+    count
   end
 
-  def self.artist_count
-    artist_count = {}
+  def self.count
+    count = {}
     @@artists.each do |artist|
-      if artist_count[artist] #if the artist is already in the hash
-        artist_count[artist] += 1
+      if count[artist] 
+        count[artist] += 1
       else
-        artist_count[artist] = 1
+        count[artist] = 1
       end
     end
-    artist_count
+    count
   end
 end
