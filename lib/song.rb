@@ -2,5 +2,6 @@ class Song
   
   attr_accessor :name, :artist, :genre
   
-  @son
+  @count = 0 
+  
   def class_variable_set
