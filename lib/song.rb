@@ -13,3 +13,7 @@ class Song
     @@count +=1 
     @@genre << genre
     @@artist << artist
+    
+  end
+  
+  def self.count
