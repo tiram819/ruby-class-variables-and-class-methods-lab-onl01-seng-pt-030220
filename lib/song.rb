@@ -1,3 +1,3 @@
 class Song 
   
-  def 
+  def class_variable_set
