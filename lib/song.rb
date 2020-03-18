@@ -6,4 +6,4 @@ class Song
   @@artist = []
   @@genre = []
   
-  def initialize
+  def initialize 
