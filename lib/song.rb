@@ -7,3 +7,5 @@ class Song
   @@genre = []
   
   def initialize(name, artist, genre)
+    @name = name
+    @
